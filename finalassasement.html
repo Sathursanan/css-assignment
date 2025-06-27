@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h2 {
+      background-color: white;
+      text-align: center;
+}
+    
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: lightblue; 
+}
+
+.div {
+  max-width: 800px;
+  height: 917px;
+  margin: auto ;
+  padding: 0px;
+  background-color: white;
+  
+}
+
+.form-box {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 0;
+}
+
+fieldset {
+  border: 1px dashed black;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+  width: 100%;
+}
+
+
+
+.course-list,
+.upcoming-sessions {
+  margin-bottom: 20px;
+}
+
+.course-list ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.upcoming-sessions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.upcoming-sessions th,
+.upcoming-sessions td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.upcoming-sessions th {
+  background-color: lightblue;
+}
+
+footer {
+  
+  left: o;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+</style>
+<body>
+
+   <h2>Student Profile Registration</h2>
+
+   <div class="div">
+        
+    <form class="form-box">
+      <fieldset>
+        <legend>Personal Details</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course">
+          <option>Web Development</option>
+          <option>UI\UX Design</option>
+          <option>Data Science</option>
+        
+        </select><br>
+
+        <p>Available Days:</p>
+        <label for="">Monday</label>
+        <input type="checkbox" name="days" value="monday"><br>
+        <label for="">Wednesday</label>
+        <input type="checkbox" name="days" value="wednesday"><br>
+        <label for="">Friday</label>
+        <input type="checkbox" name="days" value="friday">
+      </fieldset>
+    
+
+    <div class="course-list">
+      <h4> Available Courses</h4>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React & Next.js</li>
+        <li>Node.js and Express</li>
+        <li>Python for Beginners</li>
+      </ul>
+    </div>
+
+    <div class="upcoming-sessions">
+      <h4>Upcoming Sessions</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & CSS</td>
+            <td>June 25</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr>
+            <td>JavaScript Basics</td>
+            <td>June 28</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <td>React Introduction</td>
+            <td>July 1</td>
+            <td>11:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    </div>
+    <footer>
+    
+      &copy;2025 UKI Tech School <span>|</span>Student Portal
+    
+    </footer>
+    
+
+
+
+</body>
+</html>
